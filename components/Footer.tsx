@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Mail, Twitter, Instagram, Github, Linkedin } from "lucide-react";
 
@@ -29,16 +31,16 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple to-blue-electric flex items-center justify-center text-white font-bold text-lg">
-                LE
-              </div>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple via-purple-light to-blue-electric flex items-center justify-center text-white font-bold text-lg shadow-glow-purple hover:shadow-glow-blue transition-all duration-300 hover:scale-110">
+              LE
+            </div>
               <span className="font-display text-xl font-bold">
                 Little Einstein Studio
               </span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              We build apps. We craft designs. We create digital experiences.
-              A creative tech company pushing boundaries in digital innovation.
+              We build apps. We craft designs. We create digital experiences. A
+              creative tech company pushing boundaries in digital innovation.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => {
@@ -49,7 +51,7 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+                    className="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-glow-soft backdrop-blur-sm"
                     aria-label={social.name}
                   >
                     <Icon size={18} />
@@ -83,17 +85,17 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:hello@littleeinstein.studio"
-                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 break-all sm:break-normal"
                 >
-                  <Mail size={16} />
-                  hello@littleeinstein.studio
+                  <Mail size={16} className="flex-shrink-0" />
+                  <span className="text-sm sm:text-base">hello@littleeinstein.studio</span>
                 </a>
               </li>
             </ul>
             <div className="mt-6">
               <Link
                 href="/contact"
-                className="inline-block px-6 py-2.5 bg-gradient-to-r from-purple to-blue-electric text-white rounded-lg font-medium hover:shadow-lg transition-all"
+                className="inline-block w-full sm:w-auto text-center px-6 py-2.5 bg-gradient-to-r from-purple via-purple-light to-blue-electric text-white rounded-xl font-medium hover:shadow-glow-purple transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 Start a Project
               </Link>

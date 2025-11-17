@@ -17,7 +17,7 @@ export default function PortfolioPage() {
   return (
     <>
       <PortfolioHero />
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-[#FFF2CC]/20 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolioContent.map((project) => (

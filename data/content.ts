@@ -41,7 +41,7 @@ export const siteContent = {
       description:
         "A comprehensive banking app with advanced security features and seamless user experience.",
       category: "App Development",
-      image: "https://placehold.co/600x400/6366f1/ffffff?text=Fintech+App",
+      image: "/1032569.png",
       tags: ["React Native", "TypeScript", "Fintech"],
     },
     {
@@ -50,8 +50,7 @@ export const siteContent = {
       description:
         "Modern e-commerce solution with advanced analytics and personalized shopping experiences.",
       category: "Web Development",
-      image:
-        "https://placehold.co/600x400/7c3aed/ffffff?text=E-Commerce+Platform",
+      image: "/1032569.png",
       tags: ["Next.js", "E-Commerce", "Analytics"],
     },
     {
@@ -60,8 +59,7 @@ export const siteContent = {
       description:
         "Complete healthcare solution connecting patients, doctors, and healthcare providers.",
       category: "App Development",
-      image:
-        "https://placehold.co/600x400/3b82f6/ffffff?text=Healthcare+App",
+      image: "/1032569.png",
       tags: ["Healthcare", "React Native", "API"],
     },
   ],
@@ -123,6 +121,7 @@ export const siteContent = {
       role: "Co-founder · Creative Director",
       bio: "Shapes vibrant worlds, leads motion studies, and keeps our colour palette playful.",
       avatar: "https://placehold.co/240x240/FEE2E2/1F2937?text=OK",
+      avatar: "/1032569.png",
       location: "London, UK",
       funFact: "Sketches UI ideas on napkins and vinyl sleeves.",
     },
@@ -130,23 +129,23 @@ export const siteContent = {
       name: "Adetomiwa Adetoro",
       role: "Co-founder · Engineering Lead",
       bio: "Full-stack guardian building fast, accessible experiences with meticulous testing.",
-      avatar: "https://placehold.co/240x240/DBEAFE/1E3A8A?text=AA",
+      avatar: "/1032569.png",
       location: "Lagos, NG",
       funFact: "Turns lo-fi beats into reusable React hooks.",
     },
     {
-      name: "Nova Amadi",
+      name: "Stacey Salami",
       role: "Product Strategist",
       bio: "Loves research sprints, parent interviews, and mapping delight metrics.",
-      avatar: "https://placehold.co/240x240/FDE68A/92400E?text=NA",
+      avatar: "/1032569.png",
       location: "Remote",
       funFact: "Hosts a monthly idea jam called Mini Makers.",
     },
     {
-      name: "Elli Park",
+      name: "Abdussamad Abdussalam",
       role: "Visual Storyteller",
       bio: "Illustrates mascots, animates micro-moments, and keeps typography friendly.",
-      avatar: "https://placehold.co/240x240/C7D2FE/312E81?text=EP",
+      avatar: "/1032569.png",
       location: "Seoul, KR",
       funFact: "Collects stickers from every prototype release.",
     },
@@ -327,9 +326,9 @@ export const portfolioContent = [
     ],
     techStack: ["React Native", "TypeScript", "Node.js", "MongoDB", "AWS"],
     images: [
-      "https://placehold.co/800x600/6366f1/ffffff?text=Fintech+App+1",
-      "https://placehold.co/800x600/7c3aed/ffffff?text=Fintech+App+2",
-      "https://placehold.co/800x600/3b82f6/ffffff?text=Fintech+App+3",
+      "/1032569.png",
+      "/1032569.png",
+      "/1032569.png",
     ],
     results: "200K+ downloads, 4.8★ rating, 40% increase in user engagement",
   },
@@ -350,8 +349,8 @@ export const portfolioContent = [
     ],
     techStack: ["Next.js", "TypeScript", "Shopify", "Stripe", "PostgreSQL"],
     images: [
-      "https://placehold.co/800x600/7c3aed/ffffff?text=E-Commerce+1",
-      "https://placehold.co/800x600/6366f1/ffffff?text=E-Commerce+2",
+      "/1032569.png",
+      "/1032569.png",
     ],
     results: "50% increase in conversions, 2x faster load times",
   },
@@ -372,8 +371,8 @@ export const portfolioContent = [
     ],
     techStack: ["React Native", "Python", "Django", "PostgreSQL", "WebRTC"],
     images: [
-      "https://placehold.co/800x600/3b82f6/ffffff?text=Healthcare+App+1",
-      "https://placehold.co/800x600/6366f1/ffffff?text=Healthcare+App+2",
+      "/1032569.png",
+      "/1032569.png",
     ],
     results: "30% reduction in appointment no-shows, improved patient satisfaction",
   },
@@ -390,6 +389,7 @@ export const blogContent = [
     readTime: "5 min read",
     author: "John Doe",
     image: "https://placehold.co/800x400/6366f1/ffffff?text=Mobile+Apps",
+    image: "/1032569.png",
     content: "Full article content here...",
   },
   {
@@ -401,7 +401,7 @@ export const blogContent = [
     date: "March 10, 2024",
     readTime: "7 min read",
     author: "Jane Smith",
-    image: "https://placehold.co/800x400/7c3aed/ffffff?text=UI+UX+Design",
+    image: "/1032569.png",
     content: "Full article content here...",
   },
   {
@@ -413,7 +413,7 @@ export const blogContent = [
     date: "March 5, 2024",
     readTime: "6 min read",
     author: "Mike Johnson",
-    image: "https://placehold.co/800x400/3b82f6/ffffff?text=Digital+Strategy",
+    image: "/1032569.png",
     content: "Full article content here...",
   },
 ];

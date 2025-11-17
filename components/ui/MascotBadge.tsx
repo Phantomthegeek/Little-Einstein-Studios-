@@ -27,10 +27,10 @@ export default function MascotBadge({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-white/90 backdrop-blur border border-white/80 rounded-3xl p-5 shadow-2xl flex items-center gap-4 max-w-sm"
+      className="bg-white/90 backdrop-blur border border-white/80 rounded-3xl p-4 sm:p-5 shadow-2xl flex items-center gap-3 sm:gap-4 w-full sm:max-w-sm"
     >
       <div
-        className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${accentMap[accent]} flex items-center justify-center text-3xl`}
+        className={`w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${accentMap[accent]} flex items-center justify-center text-2xl sm:text-3xl flex-shrink-0`}
       >
         {emoji}
       </div>

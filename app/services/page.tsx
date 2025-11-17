@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ServicesHero from "@/sections/ServicesHero";
 import ServiceDetail from "@/sections/ServiceDetail";
-import { servicesContent } from "@/data/content";
+import { getServices } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Services | Little Einstein Studio",
@@ -13,14 +13,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+  const services = await getServices();
+
   return (
     <>
       <ServicesHero />
-      {servicesContent.map((service, index) => (
+      {services.map((service, index) => (
         <ServiceDetail
           key={service.id}
-          service={service}
+          service={{
+            id: service.id,
+            title: service.name,
+            description: service.description,
+            deliverables: service.deliverables as string[],
+            tools: service.tools as string[],
+            cta: service.highlight ?? "Plan a sprint",
+            // Additional fields can be mapped here
+          }}
           isEven={index % 2 === 0}
         />
       ))}

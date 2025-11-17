@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import Button from "@/components/ui/Button";
 import AnimatedReveal from "@/components/ui/AnimatedReveal";
+import CTAFooter from "@/sections/CTAFooter";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+    <div className="pt-20 sm:pt-24 md:pt-32 pb-0 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-[#FFF2CC] to-[#FFE0F0] text-charcoal">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -67,7 +68,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <AnimatedReveal direction="left" className="space-y-8">
-            <div>
+            <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-lg border border-white/60">
               <h2 className="text-2xl font-bold text-charcoal mb-6">
                 Get in Touch
               </h2>
@@ -80,7 +81,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-charcoal mb-1">Email</h3>
                     <a
                       href="mailto:hello@littleeinstein.studio"
-                      className="text-charcoal/70 hover:text-purple transition-colors"
+                      className="text-charcoal/70 hover:text-purple transition-colors break-all sm:break-normal text-sm sm:text-base"
                     >
                       hello@littleeinstein.studio
                     </a>
@@ -135,7 +136,7 @@ export default function ContactPage() {
           <AnimatedReveal direction="right">
             <form
               onSubmit={handleSubmit}
-              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+              className="bg-white/90 backdrop-blur-md p-8 rounded-3xl shadow-lg border border-white/60"
             >
               <div className="space-y-6">
                 <div>
@@ -237,6 +238,7 @@ export default function ContactPage() {
           </AnimatedReveal>
         </div>
       </div>
+      <CTAFooter />
     </div>
   );
 }

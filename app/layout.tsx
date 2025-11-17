@@ -62,6 +62,7 @@ export default function RootLayout({
       className={`${inter.variable} ${sora.variable} ${quicksand.variable}`}
     >
       <body className="font-sans antialiased bg-white text-charcoal">
+        <div className="fixed inset-0 -z-20 bg-noise-soft opacity-70 pointer-events-none" />
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />

@@ -19,8 +19,10 @@ export default function ServiceDetail({ service, isEven }: ServiceDetailProps) {
   return (
     <section
       id={service.id}
-      className={`py-20 px-4 sm:px-6 lg:px-8 ${
-        isEven ? "bg-gray-50" : "bg-white"
+      className={`py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 ${
+        isEven
+          ? "bg-gradient-to-br from-[#DFF2FF]/30 to-white"
+          : "bg-gradient-to-br from-[#FFF2CC]/30 to-white"
       }`}
     >
       <div className="max-w-7xl mx-auto">

@@ -3,11 +3,11 @@
 import SectionHeader from "@/components/ui/SectionHeader";
 import AnimatedReveal from "@/components/ui/AnimatedReveal";
 import Button from "@/components/ui/Button";
-import { servicesContent } from "@/data/content";
+import { Service } from "@prisma/client";
 
-export default function ServicesOverview() {
+export default function ServicesOverview({ services }: { services: Service[] }) {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#EFF6FF] to-white">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#EFF6FF] to-white text-charcoal">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           tag="Services"
@@ -17,7 +17,7 @@ export default function ServicesOverview() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {servicesContent.map((service, index) => (
+          {services.map((service, index) => (
             <AnimatedReveal
               key={service.id}
               direction="up"
@@ -35,7 +35,7 @@ export default function ServicesOverview() {
                   Key Deliverables:
                 </h4>
                 <ul className="space-y-2">
-                  {service.deliverables.slice(0, 3).map((item, i) => (
+                  {(service.deliverables as string[]).slice(0, 3).map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-charcoal/70">
                       <span className="text-purple mt-1">•</span>
                       <span>{item}</span>
@@ -44,7 +44,7 @@ export default function ServicesOverview() {
                 </ul>
               </div>
               <Button
-                href={`/services#${service.id}`}
+                href={`/services#${service.slug}`}
                 variant="outline"
                 className="border-2 border-charcoal/20"
               >

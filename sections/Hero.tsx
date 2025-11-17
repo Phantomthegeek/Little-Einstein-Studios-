@@ -8,7 +8,7 @@ import MascotBadge from "@/components/ui/MascotBadge";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#FFF2CC] via-[#FFE0F0] to-[#DFF2FF]">
+    <section className="relative overflow-hidden gradient-candy bg-noise-soft">
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           animate={{ y: [0, -20, 0] }}
@@ -29,12 +29,12 @@ export default function Hero() {
         </motion.span>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 flex flex-col items-center text-center gap-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-28 flex flex-col items-center text-center gap-6 sm:gap-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/80 text-sm font-semibold text-pink-500 shadow-lg"
+          className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 rounded-full bg-white/90 backdrop-blur-md text-xs sm:text-sm font-semibold text-gradient-warm shadow-glow-soft hover-lift"
         >
           <Sparkles size={16} />
           Playful products for curious minds
@@ -76,7 +76,7 @@ export default function Hero() {
             <Button
               href="/contact"
               showArrow
-              className="px-8 py-4 text-lg bg-gradient-to-r from-[#FF7FAB] via-[#FBBF24] to-[#4ADE80] text-charcoal"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-gradient-to-r from-[#FF7FAB] via-[#FBBF24] to-[#4ADE80] text-charcoal"
               sparkle
             >
               {siteContent.hero.cta.primary}
@@ -84,7 +84,7 @@ export default function Hero() {
             <Button
               href="/portfolio"
               variant="outline"
-              className="border-2 border-charcoal/20 bg-white/80"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg border-2 border-charcoal/20 bg-white/80"
               sparkle
             >
               {siteContent.hero.cta.secondary}
@@ -112,12 +112,12 @@ export default function Hero() {
           ].map((stat) => (
             <div
               key={stat.label}
-              className="bg-white/80 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/60"
+              className="bg-white/90 backdrop-blur-md rounded-2xl p-4 sm:p-6 shadow-glow-soft border border-purple/10 hover:border-purple/20 hover-lift transition-all duration-300"
             >
-              <p className="text-3xl font-display font-bold text-charcoal">
+              <p className="text-2xl sm:text-3xl font-display font-bold text-gradient-purple">
                 {stat.value}
               </p>
-              <p className="text-sm uppercase tracking-[0.2em] text-charcoal/60 mt-2">
+              <p className="text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.2em] text-charcoal/60 mt-2">
                 {stat.label}
               </p>
             </div>

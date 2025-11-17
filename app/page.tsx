@@ -8,18 +8,27 @@ import CTAFooter from "@/sections/CTAFooter";
 import TeamSpotlight from "@/sections/TeamSpotlight";
 import StudioCulture from "@/sections/StudioCulture";
 import ConfettiDivider from "@/components/ui/ConfettiDivider";
+import ExperimentShowcase from "@/sections/ExperimentShowcase";
+import { getExperiments, getServices, getTestimonials } from "@/lib/data";
 
-export default function Home() {
+export default async function Home() {
+  const [services, experiments, testimonials] = await Promise.all([
+    getServices(),
+    getExperiments(),
+    getTestimonials(),
+  ]);
+
   return (
     <>
       <Hero />
       <ConfettiDivider />
-      <WhatWeDo />
+      <WhatWeDo services={services} />
       <FeaturedProjects />
       <ConfettiDivider />
-      <ServicesOverview />
+      <ServicesOverview services={services} />
+      <ExperimentShowcase experiments={experiments} />
       <WhyChooseUs />
-      <Testimonials />
+      <Testimonials testimonials={testimonials} />
       <TeamSpotlight />
       <StudioCulture />
       <CTAFooter />

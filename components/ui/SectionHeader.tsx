@@ -23,17 +23,19 @@ export default function SectionHeader({
   };
 
   return (
-    <div className={cn("max-w-3xl mb-12", alignClasses[align], className)}>
+    <div className={cn("max-w-3xl mb-8 sm:mb-12", alignClasses[align], className)}>
       {tag && (
-        <span className="inline-block px-3 py-1 text-sm font-medium text-purple bg-purple/10 rounded-full mb-4">
+        <span className="inline-block px-3 py-1 text-xs sm:text-sm font-semibold text-purple bg-purple/10 border border-purple/20 rounded-full mb-3 sm:mb-4 shadow-sm">
           {tag}
         </span>
       )}
-      <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
-        {title}
+      <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-3 sm:mb-4">
+        <span className="bg-gradient-to-r from-charcoal via-charcoal-light to-charcoal bg-clip-text text-transparent">
+          {title}
+        </span>
       </h2>
       {description && (
-        <p className="text-lg text-charcoal/70 leading-relaxed">
+        <p className="text-base sm:text-lg text-charcoal/70 leading-relaxed px-2 sm:px-0">
           {description}
         </p>
       )}

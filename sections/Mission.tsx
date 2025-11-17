@@ -5,7 +5,7 @@ import { aboutContent } from "@/data/content";
 
 export default function Mission() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-[#DFF2FF]/30">
       <div className="max-w-4xl mx-auto">
         <AnimatedReveal direction="up">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">

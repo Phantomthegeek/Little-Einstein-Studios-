@@ -8,7 +8,7 @@ export default function TeamSpotlight() {
   const team = siteContent.team || [];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#FFF4EA] via-white to-[#F0F9FF]">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#FFF4EA] via-white to-[#F0F9FF] text-charcoal">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           tag="The Studio Crew"
