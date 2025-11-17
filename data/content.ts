@@ -120,7 +120,6 @@ export const siteContent = {
       name: "Osato Kareem",
       role: "Co-founder · Creative Director",
       bio: "Shapes vibrant worlds, leads motion studies, and keeps our colour palette playful.",
-      avatar: "https://placehold.co/240x240/FEE2E2/1F2937?text=OK",
       avatar: "/1032569.png",
       location: "London, UK",
       funFact: "Sketches UI ideas on napkins and vinyl sleeves.",
