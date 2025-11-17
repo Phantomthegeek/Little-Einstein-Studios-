@@ -1,0 +1,62 @@
+"use client";
+
+import SectionHeader from "@/components/ui/SectionHeader";
+import AnimatedReveal from "@/components/ui/AnimatedReveal";
+import Button from "@/components/ui/Button";
+import { servicesContent } from "@/data/content";
+
+export default function ServicesOverview() {
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeader
+          tag="Services"
+          title="Comprehensive Digital Solutions"
+          description="From concept to launch, we provide end-to-end services to bring your digital vision to life."
+          align="center"
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {servicesContent.map((service, index) => (
+            <AnimatedReveal
+              key={service.id}
+              direction="up"
+              delay={index * 0.1}
+              className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
+            >
+              <h3 className="text-2xl font-bold text-charcoal mb-4">
+                {service.title}
+              </h3>
+              <p className="text-charcoal/70 mb-6 leading-relaxed">
+                {service.description}
+              </p>
+              <div className="mb-6">
+                <h4 className="font-semibold text-charcoal mb-3">
+                  Key Deliverables:
+                </h4>
+                <ul className="space-y-2">
+                  {service.deliverables.slice(0, 3).map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-charcoal/70">
+                      <span className="text-purple mt-1">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <Button href={`/services#${service.id}`} variant="outline">
+                Learn More
+              </Button>
+            </AnimatedReveal>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <Button href="/services" showArrow>
+            Explore All Services
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+

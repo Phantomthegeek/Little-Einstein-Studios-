@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "name": "Little Einstein Studio",
+    "tagline": "Learning games & creative digital experiences for kids aged 5–8",
+    "logoText": "Little Einstein",
+    "accentColor": "#FFB84D",
+    "primaryColor": "#2B6CB0",
+    "socials": {
+      "twitter": "https://twitter.com/yourhandle",
+      "instagram": "https://instagram.com/yourhandle",
+      "github": "https://github.com/yourhandle"
+    }
+  },
+  "nav": ["Home", "About", "Projects", "Team", "Contact"],
+  "hero": {
+    "headline": "Playful apps that teach — made with heart",
+    "sub": "We design colourful, safe, and educational mobile games that spark curiosity and build early maths skills.",
+    "ctaPrimary": "See Projects",
+    "ctaSecondary": "Get in touch",
+    "illustration": "https://placehold.co/600x400/png?text=Little+Einstein+Hero"
+  },
+  "about": {
+    "title": "Who we are",
+    "body": "Little Einstein Studio is an independent creative studio co-founded by Osato Kareem and Adetomiwa Adetoro. We focus on playful, research-backed learning apps for kids aged 5–8. Our tools combine colourful art, short animations, and positive reinforcement to help early learners build confidence.",
+    "values": ["Child-first design", "Research-driven", "Accessible & inclusive", "Fun-first learning"]
+  },
+  "projects": [
+    {
+      "id": "le-math-01",
+      "title": "Little Einstein — Math Adventure",
+      "short": "A mobile math game for kids (ages 5–8) focusing on addition and number sense.",
+      "tags": ["iOS", "Android", "Education"],
+      "thumbnail": "https://placehold.co/400x300/png?text=Math+Adventure",
+      "score": 4.8
+    },
+    {
+      "id": "le-letters-01",
+      "title": "Alphabet Explorer",
+      "short": "Interactive mini-games to practice letters, sounds, and tracing.",
+      "tags": ["Web", "Education"],
+      "thumbnail": "https://placehold.co/400x300/png?text=Alphabet+Explorer",
+      "score": 4.6
+    },
+    {
+      "id": "le-puzzle-01",
+      "title": "Shapes & Patterns",
+      "short": "Pattern recognition and spatial reasoning with delightful stickers.",
+      "tags": ["iOS", "Android"],
+      "thumbnail": "https://placehold.co/400x300/png?text=Shapes+%26+Patterns",
+      "score": 4.7
+    }
+  ],
+  "team": [
+    {
+      "name": "Osato Kareem",
+      "role": "Co-founder & Lead Designer",
+      "bio": "Visual designer, animator, and product lead. Loves bright palettes and motion.",
+      "avatar": "https://placehold.co/200x200/png?text=Osato"
+    },
+    {
+      "name": "Adetomiwa Adetoro",
+      "role": "Co-founder & Developer",
+      "bio": "Full-stack dev focused on mobile games and accessible interactions.",
+      "avatar": "https://placehold.co/200x200/png?text=Adetomiwa"
+    }
+  ],
+  "contact": {
+    "email": "hello@littleeinstein.studio",
+    "address": "Remote — UK & Nigeria",
+    "formNote": "We normally reply within 2 business days."
+  }
+}
+
