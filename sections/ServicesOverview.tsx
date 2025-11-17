@@ -25,7 +25,7 @@ export default function ServicesOverview({ services }: { services: Service[] }) 
               className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow border border-white/80"
             >
               <h3 className="text-2xl font-display font-bold text-charcoal mb-4">
-                {service.title}
+                {service.name}
               </h3>
               <p className="text-charcoal/70 mb-6 leading-relaxed">
                 {service.description}

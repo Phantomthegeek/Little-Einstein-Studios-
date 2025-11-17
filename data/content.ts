@@ -387,7 +387,6 @@ export const blogContent = [
     date: "March 15, 2024",
     readTime: "5 min read",
     author: "John Doe",
-    image: "https://placehold.co/800x400/6366f1/ffffff?text=Mobile+Apps",
     image: "/1032569.png",
     content: "Full article content here...",
   },
