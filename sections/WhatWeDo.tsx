@@ -31,15 +31,15 @@ export default function WhatWeDo() {
                 key={service.title}
                 direction="up"
                 delay={index * 0.1}
-                className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
+                className="p-8 rounded-3xl bg-gradient-to-br from-white to-[#F8F5FF] shadow-xl hover:-translate-y-1 transition-transform border border-white"
               >
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple to-blue-electric flex items-center justify-center mb-6">
-                  <IconComponent size={28} className="text-white" />
+                <div className="w-16 h-16 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-6">
+                  <IconComponent size={32} className="text-purple" />
                 </div>
-                <h3 className="text-2xl font-bold text-charcoal mb-4">
+                <h3 className="text-2xl font-display font-bold text-charcoal mb-4">
                   {service.title}
                 </h3>
-                <p className="text-charcoal/70 leading-relaxed">
+                <p className="text-charcoal/70 leading-relaxed font-playful">
                   {service.description}
                 </p>
               </AnimatedReveal>

@@ -1,11 +1,11 @@
 export const siteContent = {
   hero: {
-    headline: "We build apps. We craft designs. We create digital experiences.",
+    headline: "We build apps. We craft designs. We create digital playgrounds.",
     description:
-      "A creative tech company pushing boundaries in digital innovation. We transform ideas into exceptional mobile apps, stunning designs, and strategic digital solutions.",
+      "A colourful crew of inventors crafting playful, research-backed learning experiences. We mix bright pixels, bold code, and joyful strategy to make ideas feel magical.",
     cta: {
-      primary: "Start a Project",
-      secondary: "View Our Work",
+      primary: "Build With Us",
+      secondary: "See the Magic",
     },
   },
   services: {
@@ -18,19 +18,19 @@ export const siteContent = {
         icon: "📱",
         title: "App Development",
         description:
-          "Native and cross-platform mobile app development with cutting-edge technologies and best practices.",
+          "Native and cross-platform builds with delightful micro-interactions, offline support, and rock-solid performance.",
       },
       {
         icon: "🎨",
         title: "UI/UX Design",
         description:
-          "User-centered design that creates beautiful, intuitive experiences that users love.",
+          "Story-driven design systems, vibrant illustrations, and prototypes that feel like polished products.",
       },
       {
         icon: "🎯",
         title: "Digital Strategy",
         description:
-          "Strategic planning and consulting to help you navigate the digital landscape and achieve your goals.",
+          "Playful roadmaps, experiment sprints, and data-backed decisions to keep your product curious and confident.",
       },
     ],
   },
@@ -93,10 +93,10 @@ export const siteContent = {
   ],
   whyChooseUs: [
     {
-      icon: "⚡",
-      title: "Fast Delivery",
+      icon: "🌈",
+      title: "Playful Craft",
       description:
-        "We deliver projects on time without compromising on quality. Speed and excellence go hand in hand.",
+        "We blend whimsy with rigorous UX thinking so every screen feels joyful and purposeful.",
     },
     {
       icon: "🎯",
@@ -115,6 +115,60 @@ export const siteContent = {
       title: "Partnership Approach",
       description:
         "We're not just vendors. We're your partners in growth, invested in your long-term success.",
+    },
+  ],
+  team: [
+    {
+      name: "Osato Kareem",
+      role: "Co-founder · Creative Director",
+      bio: "Shapes vibrant worlds, leads motion studies, and keeps our colour palette playful.",
+      avatar: "https://placehold.co/240x240/FEE2E2/1F2937?text=OK",
+      location: "London, UK",
+      funFact: "Sketches UI ideas on napkins and vinyl sleeves.",
+    },
+    {
+      name: "Adetomiwa Adetoro",
+      role: "Co-founder · Engineering Lead",
+      bio: "Full-stack guardian building fast, accessible experiences with meticulous testing.",
+      avatar: "https://placehold.co/240x240/DBEAFE/1E3A8A?text=AA",
+      location: "Lagos, NG",
+      funFact: "Turns lo-fi beats into reusable React hooks.",
+    },
+    {
+      name: "Nova Amadi",
+      role: "Product Strategist",
+      bio: "Loves research sprints, parent interviews, and mapping delight metrics.",
+      avatar: "https://placehold.co/240x240/FDE68A/92400E?text=NA",
+      location: "Remote",
+      funFact: "Hosts a monthly idea jam called Mini Makers.",
+    },
+    {
+      name: "Elli Park",
+      role: "Visual Storyteller",
+      bio: "Illustrates mascots, animates micro-moments, and keeps typography friendly.",
+      avatar: "https://placehold.co/240x240/C7D2FE/312E81?text=EP",
+      location: "Seoul, KR",
+      funFact: "Collects stickers from every prototype release.",
+    },
+  ],
+  culture: [
+    {
+      title: "Mini hack nights",
+      description:
+        "Weekly experiment jams where we prototype wild ideas with snacks, lego bricks, and lo-fi beats.",
+      icon: "🧪",
+    },
+    {
+      title: "Kid-test loops",
+      description:
+        "We interview little learners and parents early, turning feedback into sticker charts and feature tweaks.",
+      icon: "🎒",
+    },
+    {
+      title: "Remote but tight",
+      description:
+        "Studios in London, Lagos, and Seoul stay synced with mural walls, doodle notes, and Friday Figma karaoke.",
+      icon: "🌍",
     },
   ],
 };

@@ -6,7 +6,7 @@ import { siteContent } from "@/data/content";
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFF6ED]">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           tag="Why Us"
@@ -21,10 +21,10 @@ export default function WhyChooseUs() {
               key={item.title}
               direction="up"
               delay={index * 0.1}
-              className="text-center"
+              className="text-center bg-white/80 rounded-3xl p-6 shadow-lg border border-white/70"
             >
               <div className="text-5xl mb-4">{item.icon}</div>
-              <h3 className="text-xl font-bold text-charcoal mb-3">
+              <h3 className="text-xl font-display font-bold text-charcoal mb-3">
                 {item.title}
               </h3>
               <p className="text-charcoal/70 leading-relaxed">

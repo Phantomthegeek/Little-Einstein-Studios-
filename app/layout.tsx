@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
+import { Inter, Sora, Quicksand } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -13,6 +13,13 @@ const inter = Inter({
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
+  display: "swap",
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -50,7 +57,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${sora.variable} ${quicksand.variable}`}
+    >
       <body className="font-sans antialiased bg-white text-charcoal">
         <Navigation />
         <main className="min-h-screen">{children}</main>

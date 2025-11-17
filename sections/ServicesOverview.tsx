@@ -7,7 +7,7 @@ import { servicesContent } from "@/data/content";
 
 export default function ServicesOverview() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#EFF6FF] to-white">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           tag="Services"
@@ -22,9 +22,9 @@ export default function ServicesOverview() {
               key={service.id}
               direction="up"
               delay={index * 0.1}
-              className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
+              className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow border border-white/80"
             >
-              <h3 className="text-2xl font-bold text-charcoal mb-4">
+              <h3 className="text-2xl font-display font-bold text-charcoal mb-4">
                 {service.title}
               </h3>
               <p className="text-charcoal/70 mb-6 leading-relaxed">
@@ -43,7 +43,11 @@ export default function ServicesOverview() {
                   ))}
                 </ul>
               </div>
-              <Button href={`/services#${service.id}`} variant="outline">
+              <Button
+                href={`/services#${service.id}`}
+                variant="outline"
+                className="border-2 border-charcoal/20"
+              >
                 Learn More
               </Button>
             </AnimatedReveal>
